@@ -194,5 +194,40 @@
                 </plugins>
             </build>
         </profile>
+
+        <profile>
+            <id>clone-${repository5}</id>
+            <activation>
+                <property>
+                    <name>repository5</name>
+                    <value>!</value>
+                </property>
+            </activation>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-scm-plugin</artifactId>
+                        <version>${maven-scm-plugin.version}</version>
+                        <executions>
+                            <execution>
+                                <id>clone-${repository5}</id>
+                                <phase>initialize</phase>
+                                <goals>
+                                    <goal>checkout</goal>
+                                </goals>
+                                <configuration>
+                                    <basedir>${project.parent.basedir}</basedir>
+                                    <skipCheckoutIfExists>true</skipCheckoutIfExists>
+                                    <checkoutDirectory>${project.parent.basedir}/${repository5}</checkoutDirectory>
+                                    <connectionUrl>scm:git:${remote.url}/${repository5}.git
+                                    </connectionUrl>
+                                </configuration>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
     </profiles>
 </project>

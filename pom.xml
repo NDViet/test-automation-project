@@ -23,6 +23,7 @@
         <repository2>test-java2robot-adapter</repository2>
         <repository3>test-robot-framework</repository3>
         <repository4>test-webdriver-downloader</repository4>
+        <repository5>test-testng-framework</repository5>
         <maven.deploy.skip>true</maven.deploy.skip>
     </properties>
 
@@ -84,6 +85,7 @@
                 <module>${repository2}</module>
                 <module>${repository3}</module>
                 <module>${repository4}</module>
+                <module>${repository5}</module>
                 <module>main</module>
             </modules>
         </profile>

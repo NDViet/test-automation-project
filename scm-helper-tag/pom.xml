@@ -236,5 +236,40 @@
                 </plugins>
             </build>
         </profile>
+
+        <profile>
+            <id>tag-${repository5}</id>
+            <activation>
+                <property>
+                    <name>repository5</name>
+                    <value>!</value>
+                </property>
+            </activation>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-scm-plugin</artifactId>
+                        <version>${maven-scm-plugin.version}</version>
+                        <executions>
+                            <execution>
+                                <id>tag-${repository5}</id>
+                                <phase>initialize</phase>
+                                <goals>
+                                    <goal>${goal}</goal>
+                                </goals>
+                                <configuration>
+                                    <tag>${name}</tag>
+                                    <connectionUrl>scm:git:${remote.url}/${repository5}.git
+                                    </connectionUrl>
+                                    <workingDirectory>${project.parent.basedir}/${repository5}</workingDirectory>
+                                    <pushChanges>${pushChanges}</pushChanges>
+                                </configuration>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
     </profiles>
 </project>

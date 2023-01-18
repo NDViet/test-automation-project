@@ -218,5 +218,38 @@
                 </plugins>
             </build>
         </profile>
+
+        <profile>
+            <id>pull-${repository5}</id>
+            <activation>
+                <property>
+                    <name>repository5</name>
+                    <value>!</value>
+                </property>
+            </activation>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-scm-plugin</artifactId>
+                        <version>${maven-scm-plugin.version}</version>
+                        <executions>
+                            <execution>
+                                <id>pull-${repository5}</id>
+                                <phase>initialize</phase>
+                                <goals>
+                                    <goal>update</goal>
+                                </goals>
+                                <configuration>
+                                    <connectionUrl>scm:git:${remote.url}/${repository5}.git
+                                    </connectionUrl>
+                                    <workingDirectory>${project.parent.basedir}/${repository5}</workingDirectory>
+                                </configuration>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
     </profiles>
 </project>
