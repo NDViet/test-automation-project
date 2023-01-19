@@ -12,15 +12,16 @@ This provides some operations to interact with bulk repositories source code, su
 
 ## Defects
 
-* [List defects which are found while executing test](https://github.com/vietnd96/test-automation-project/issues)
+* [List defects which are found while executing test](../../issues)
 
 ## List dependency repositories
 
-1. [test-parent-pom](https://github.com/vietnd96/test-parent-pom)
-2. [test-automation-fwk](https://github.com/vietnd96/test-automation-fwk)
-3. [test-java2robot-adapter](https://github.com/vietnd96/test-java2robot-adapter)
-4. [test-robot-framework](https://github.com/vietnd96/test-robot-framework)
-5. [test-webdriver-downloader](https://github.com/vietnd96/test-webdriver-downloader)
+1. [test-parent-pom](../../../test-parent-pom)
+2. [test-automation-fwk](../../../test-automation-fwk)
+3. [test-java2robot-adapter](../../../test-java2robot-adapter)
+4. [test-robot-framework](../../../test-robot-framework)
+5. [test-testng-framework](../../../test-testng-framework)
+6. [test-webdriver-downloader](../../../test-webdriver-downloader)
 
 ## System requires
 
