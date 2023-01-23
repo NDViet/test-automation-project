@@ -23,6 +23,7 @@
         <name>${revision}</name>
         <goal>tag</goal>
         <pushChanges>false</pushChanges>
+        <sign>true</sign>
     </properties>
 
     <profiles>
@@ -54,6 +55,7 @@
                                     </connectionUrl>
                                     <workingDirectory>${project.parent.basedir}</workingDirectory>
                                     <pushChanges>${pushChanges}</pushChanges>
+                                    <sign>${sign}</sign>
                                 </configuration>
                             </execution>
                         </executions>
@@ -89,6 +91,7 @@
                                     </connectionUrl>
                                     <workingDirectory>${project.parent.basedir}/${repository0}</workingDirectory>
                                     <pushChanges>${pushChanges}</pushChanges>
+                                    <sign>${sign}</sign>
                                 </configuration>
                             </execution>
                         </executions>
@@ -124,6 +127,7 @@
                                     </connectionUrl>
                                     <workingDirectory>${project.parent.basedir}/${repository1}</workingDirectory>
                                     <pushChanges>${pushChanges}</pushChanges>
+                                    <sign>${sign}</sign>
                                 </configuration>
                             </execution>
                         </executions>
@@ -159,6 +163,7 @@
                                     </connectionUrl>
                                     <workingDirectory>${project.parent.basedir}/${repository2}</workingDirectory>
                                     <pushChanges>${pushChanges}</pushChanges>
+                                    <sign>${sign}</sign>
                                 </configuration>
                             </execution>
                         </executions>
@@ -194,6 +199,7 @@
                                     </connectionUrl>
                                     <workingDirectory>${project.parent.basedir}/${repository3}</workingDirectory>
                                     <pushChanges>${pushChanges}</pushChanges>
+                                    <sign>${sign}</sign>
                                 </configuration>
                             </execution>
                         </executions>
@@ -229,6 +235,7 @@
                                     </connectionUrl>
                                     <workingDirectory>${project.parent.basedir}/${repository4}</workingDirectory>
                                     <pushChanges>${pushChanges}</pushChanges>
+                                    <sign>${sign}</sign>
                                 </configuration>
                             </execution>
                         </executions>
@@ -264,6 +271,7 @@
                                     </connectionUrl>
                                     <workingDirectory>${project.parent.basedir}/${repository5}</workingDirectory>
                                     <pushChanges>${pushChanges}</pushChanges>
+                                    <sign>${sign}</sign>
                                 </configuration>
                             </execution>
                         </executions>
