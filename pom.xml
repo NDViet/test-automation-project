@@ -24,6 +24,7 @@
         <repository3>test-robot-framework</repository3>
         <repository4>test-webdriver-downloader</repository4>
         <repository5>test-testng-framework</repository5>
+        <repository6>test-cucumber-framework</repository6>
         <maven.deploy.skip>true</maven.deploy.skip>
     </properties>
 
@@ -86,6 +87,7 @@
                 <module>${repository3}</module>
                 <module>${repository4}</module>
                 <module>${repository5}</module>
+                <module>${repository6}</module>
                 <module>main</module>
             </modules>
         </profile>
