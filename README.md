@@ -36,7 +36,7 @@ This provides some operations to interact with bulk repositories source code, su
 #### 1. Clone this repository "test-automation-project"
 
 ```shell
-git clone git@github.com:vietnd96/test-automation-project.git
+git clone git@github.com:ndviet/test-automation-project.git
 ```
 
 #### 2. Clone dependency repositories by executing Maven command in repo "test-automation-project"
