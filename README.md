@@ -28,7 +28,8 @@ This provides some operations to interact with bulk repositories source code, su
 1. Git (Tested version 2.30.0). Ensure that code can be cloned from GitHub via SSH.
 2. Apache Maven (Tested version 3.8.6). Ensure that there is no connection blocker to reach Maven Central Repository for
    downloading dependencies.
-3. Java JDK, JRE (Tested in [17.0.2 (build 17.0.2+8)](https://jdk.java.net/archive/))
+3. Java JDK 11+ (Tested
+   in [AdoptOpenJDK-11.0.11+9](https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/tag/jdk-11.0.11+9))
 4. Chrome (Tested version 108.0.5359.125)
 
 ## Steps to execute test cases
