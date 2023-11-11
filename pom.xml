@@ -22,7 +22,7 @@
         <repository1>test-automation-fwk</repository1>
         <repository2>test-java2robot-adapter</repository2>
         <repository3>test-robot-framework</repository3>
-        <repository4>test-webdriver-downloader</repository4>
+<!--        <repository4></repository4>-->
         <repository5>test-testng-framework</repository5>
         <repository6>test-cucumber-framework</repository6>
         <maven.deploy.skip>true</maven.deploy.skip>
@@ -85,7 +85,7 @@
                 <module>${repository1}</module>
                 <module>${repository2}</module>
                 <module>${repository3}</module>
-                <module>${repository4}</module>
+<!--                <module>${repository4}</module>-->
                 <module>${repository5}</module>
                 <module>${repository6}</module>
                 <module>main</module>
