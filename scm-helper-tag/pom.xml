@@ -213,7 +213,6 @@
             <activation>
                 <property>
                     <name>repository4</name>
-                    <value>!</value>
                 </property>
             </activation>
             <build>
